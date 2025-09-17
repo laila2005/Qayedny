@@ -1,0 +1,92 @@
+
+/* Match section padding for statistics section */
+.statistics {
+	padding: 60px 20px;
+	background: rgba(254, 247, 240, 0.94);
+	box-shadow: 0 8px 40px 0px rgba(0,0,0,0.12);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+}
+.disc3{
+font-weight: 500;
+font-style: Medium;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+#title3{
+font-weight: 700;
+font-style: Bold;
+font-size: 56px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+/* Statistics cards grid and card style */
+.statistics-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 48px;
+	justify-content: center;
+	align-items: stretch;
+	margin: 48px auto 0 auto;
+	max-width: 800px;
+}
+.statistics-card {
+	background: #fff;
+	border-radius: 32px;
+	box-shadow: 0 4px 32px rgba(237, 76, 66, 0.08);
+	padding: 40px 32px 32px 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 280px;
+	min-height: 240px;
+	text-align: center;
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+.statistics-card:hover {
+	box-shadow: 0 8px 40px rgba(237, 76, 66, 0.16);
+	transform: translateY(-4px) scale(1.03);
+}
+.statistics-icon {
+	width: 72px;
+	height: 72px;
+	margin-bottom: 24px;
+    background: linear-gradient(90deg, #FA995F 0%, #F55D2E 100%);
+    width: 99.33334350585938;
+height: 99.33341979980469;
+gap: 10px;
+opacity: 1;
+border-radius: 18px;
+padding: 18px;
+
+;
+}
+.statistics-value {
+		background: linear-gradient(90deg, #FA995F 0%, #F55D2E 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin-bottom: 12px;
+		margin-top: 0;
+}
+.statistics-label {
+	color: #111;
+	margin-top: 0;
+font-weight: 700;
+font-style: Bold;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}

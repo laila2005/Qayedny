@@ -1,3 +1,62 @@
+/* Reduce vertical space between subtitle2 and maintitle in individuals section */
+ .subtitle2 {
+  margin-bottom: 0px;
+}
+.individiuals{
+    padding-bottom: 50px;
+}
+.individiuals .maintitle {
+  margin-top: 0;
+}
+/* Style for the first part of text over image cards */
+.img-card-title {
+  color: #ffffff;
+  margin-bottom: 2px;
+  display: inline-block;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: right;
+
+}
+/* Overlay text on image cards */
+.image-card-wrapper {
+  position: relative;
+  display: flex;
+  width: 355px;
+  height: 483px;
+  min-width: 355px;
+  min-height: 483px;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.img-card {
+  display: block;
+}
+.img-card-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  pointer-events: none;
+  white-space: pre-line;
+  text-align: right;
+  width: 90%;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: right;
+
+}
+
 /* Center all content in the individuals section */
 .individiuals {
   display: flex;
@@ -15,4 +74,51 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+}
+/* Image cards grid layout */
+.image-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+  align-items: center;
+  margin: 32px 0;
+}
+.img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+/* Remove scaling from img-card and mask, apply to wrapper instead */
+.image-card-wrapper {
+  transition: transform 0.2s;
+}
+.image-card-wrapper:hover {
+  transform: scale(1.04);
+}
+/* Gradient mask overlay for image cards */
+.img-card-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  pointer-events: none;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+  backdrop-filter: blur(0px);
+  z-index: 1;
+}
+.image-card-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.img-card-text {
+  z-index: 2;
 }
