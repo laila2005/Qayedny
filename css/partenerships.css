@@ -1,0 +1,53 @@
+/* Partnerships Section Styling */
+.partenerships {
+	background: #FEF7F0;
+	padding: 48px 0 48px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.partenerships .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.partenerships .subtitle2 {
+	background: #FFEFDB;
+	color: #C2410C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 22px;
+	padding: 12px 36px;
+	font-weight: 800;
+	font-size: 1.2rem;
+	margin: 0 auto 36px auto;
+	width: fit-content;
+}
+.logos {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 64px;
+	width: 100%;
+	margin: 0 auto;
+}
+.logos img {
+	max-height: 90px;
+	max-width: 220px;
+	object-fit: contain;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0 0;
+	transition: transform 0.2s;
+}
+.logos img:hover {
+	transform: scale(1.04);
+}
