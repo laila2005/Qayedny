@@ -1,0 +1,120 @@
+/* User Opinion Section Styling */
+
+.userOpnion {
+	background: #FEF6F6;
+	padding: 30px 0 0 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.userOpnion .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.userOpnion .subtitle2 {
+	background: #FFEFDB;
+	color: #C2410C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 22px;
+	padding: 12px 36px;
+	font-weight: 800;
+	font-size: 1.2rem;
+	margin: 0 auto 36px auto;
+	width: fit-content;
+}
+.userOpnion .maintitle {
+	font-weight: 800;
+	font-size: 2.8rem;
+	text-align: center;
+	color: #222;
+	margin: 0 auto 48px auto;
+	line-height: 1.3;
+}
+.userOpnion .highlight-word {
+	color: #FA8F3C;
+	font-weight: 800;
+}
+.testimonial-card {
+	background: #fff;
+	border-radius: 32px;
+	box-shadow: 0 4px 32px rgba(237, 76, 66, 0.08);
+	border: 2px dashed #E5E5E5;
+	padding: 48px 36px 48px 36px;
+	max-width: 650px;
+	min-width: 320px;
+	margin: 0 auto 32px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 28px;
+}
+.testimonial-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 18px;
+	width: 100%;
+	justify-content: center;
+}
+.testimonial-logo {
+	width: 70px;
+	height: 70px;
+	border-radius: 16px;
+	object-fit: contain;
+	background: #F6F6F6;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.testimonial-user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2px;
+}
+.testimonial-user {
+	font-weight: 700;
+	font-size: 1.35rem;
+	color: #222;
+	margin-bottom: 2px;
+}
+.testimonial-role {
+	font-size: 1.05rem;
+	color: #888;
+	font-weight: 400;
+}
+.testimonial-text {
+	font-size: 1.45rem;
+	color: #222;
+	font-weight: 400;
+	line-height: 1.7;
+	text-align: center;
+	direction: rtl;
+	unicode-bidi: plaintext;
+	margin: 0 auto;
+}
+.testimonial-dots {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 0 auto 0 auto;
+}
+.testimonial-dots .dot {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	display: inline-block;
+    border: 1px solid rgba(162, 162, 162, 0.84)
+}
+.testimonial-dots .dot.active {
+    background: linear-gradient(90deg, #FA995F 0%, #F55D2E 100%);
+border: none;
+}

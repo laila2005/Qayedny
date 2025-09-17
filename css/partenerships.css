@@ -1,13 +1,14 @@
 /* Partnerships Section Styling */
 .partenerships {
-	background: #FEF7F0;
+	background: #FFF8F2;
 	padding: 48px 0 48px 0;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 40px 0px rgba(0,0,0,0.12);
+	margin-bottom: 40px;
 }
 .partenerships .container {
 	display: flex;
