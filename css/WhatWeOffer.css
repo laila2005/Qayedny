@@ -115,4 +115,9 @@ opacity: 1;
 gap: 10px;
 border-radius: 18px;
 padding: 16px;
+cursor: pointer;
+}
+
+.cta-btn:hover{
+    background: linear-gradient(90.04deg, #fb984c 0.04%, rgba(249, 87, 75, 0.8) 131.1%);
 }
