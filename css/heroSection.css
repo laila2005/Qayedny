@@ -13,7 +13,7 @@ html, body {
 
 /* NavBar Styling */
 .NavBar {
-  position: static;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -141,7 +141,8 @@ opacity: 1;
 .hero-box {
   background: linear-gradient(135deg, #FA8F3C 0%, #ED4C42 100%);
   border-radius: 32px;
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 455px;
   height: 280px;
   display: flex;
@@ -296,7 +297,6 @@ text-align: right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   font-weight: 700;
 }
 .disc{
@@ -340,4 +340,60 @@ letter-spacing: 0%;
 
 .herobtn:hover {
   background: linear-gradient(90.04deg, #fb984c 0.04%, rgba(249, 87, 75, 0.8) 131.1%);
+}
+/* Hero Stats Row Styling */
+.hero-stats-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  border-top: 1.5px solid #e5e5e5;
+  margin-top: 32px;
+  padding-top: 24px;
+  max-width: 1000px;
+  width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  min-width: 120px;
+}
+
+.stat-icon {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 2px;
+  direction: rtl;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.stat-label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #6e6e6e;
+  text-align: right;
+  direction: rtl;
+}
+/* Stat label icon next to text */
+.stat-label-icon {
+  margin-left: 6px;
+  margin-right: 0;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
 }
