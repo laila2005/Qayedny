@@ -1,0 +1,118 @@
+/* What We Offer Section */
+.what-we-offer {
+  background: #fff;
+  text-align: center;
+  padding: 45px 20px;
+  position: relative;
+  margin-top: 0; /* شيل المسافة اللي فوق */
+  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+  /* overflow: visible;  allow star tips to show */
+  padding-bottom: 60px;
+}
+/* Extra decorative stars with custom size, position, and opacity */
+.what-we-offer-star6 {
+  content: "✦";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  top: 16px;
+  left: 965px;
+  background: linear-gradient(180deg, #DF99F7 0%, #FFDBB0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 100;
+  transform: rotate(0deg);
+}
+.what-we-offer-star7 {
+  content: "✦";
+  position: absolute;
+  width: 107px;
+  height: 107px;
+  font-size: 107px;
+  top: 270px;
+  left: 202px;
+  background: linear-gradient(180deg, #DF99F7 0%, #FFDBB0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.6;
+  pointer-events: none;
+    z-index: 100;
+  transform: rotate(0deg);
+}
+
+/* Decorative stars (زي الصورة) */
+.what-we-offer::before,
+.what-we-offer::after {
+  content: "✦";
+  position: absolute;
+  font-size: 140px;
+  background: linear-gradient(180deg, #DF99F7 0%, #FFDBB0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.what-we-offer::before {
+  top: 5%;
+  left: 5%;
+}
+.what-we-offer::after {
+  bottom: 5%;
+  right: 5%;
+}
+
+.subtitle2 {
+  background: rgba(255, 237, 213, 1);
+  color: rgba(194, 65, 12, 1);
+  display: inline-block;
+  border-radius: 22px;
+  padding: 10px 14px;
+  margin: 0 auto 24px auto;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 100%;
+  width: 70px;
+}
+
+.maintitle2 {
+  font-weight: 700;
+  font-size: 42px; /* أصغر عشان يبقى زي الصورة */
+  line-height: 140%;
+  text-align: center;
+  color: #000;
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+
+.disc2 {
+  font-weight: 400;
+  font-size: 18px; /* أصغر عشان يبقى زي الصورة */
+  line-height: 170%;
+  margin: 20px auto 30px;
+  max-width: 700px;
+  display: block;
+  direction: rtl; /* صحح الاتجاه */
+  color: #333;
+}
+
+.cta-btn{
+background: linear-gradient(90deg, #F98B40 0%, #F3765C 100%);
+box-shadow: 0px 3px 50px 0px rgba(15, 15, 15, 0.25);
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+border: none;
+color: #fff;
+width: 165px;
+height: 54px;
+opacity: 1;
+gap: 10px;
+border-radius: 18px;
+padding: 16px;
+}
